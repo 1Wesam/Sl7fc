@@ -3,83 +3,229 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SL7 FC</title>
+
+<title>SL7 FC | الموقع الرسمي</title>
 
 <style>
+
+*{
+box-sizing:border-box;
+}
+
 body{
 margin:0;
-font-family:Arial,sans-serif;
-background:#0d0d0d;
+font-family:Arial, sans-serif;
+background:#0b0b0b;
 color:white;
-text-align:center;
 }
 
 header{
-background:#0b7d3b;
-padding:40px;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
+url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55");
+background-size:cover;
+background-position:center;
+height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
 }
 
-h1{
+header h1{
+font-size:70px;
+color:#18a558;
 margin:0;
-font-size:50px;
 }
 
-p{
-font-size:20px;
+header p{
+font-size:25px;
+}
+
+nav{
+background:#18a558;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
 }
 
 section{
-padding:40px;
+padding:50px 20px;
+text-align:center;
+}
+
+.title{
+font-size:35px;
+color:#18a558;
+margin-bottom:30px;
+}
+
+.cards{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
 }
 
 .card{
-background:#1b1b1b;
-margin:20px auto;
-padding:20px;
-width:80%;
+background:#181818;
+padding:25px;
 border-radius:15px;
+width:300px;
+}
+
+.player{
+background:#181818;
+padding:20px;
+border-radius:15px;
+width:200px;
 }
 
 button{
-background:#0b7d3b;
+background:#18a558;
+border:0;
 color:white;
-border:none;
 padding:15px 30px;
-font-size:18px;
 border-radius:10px;
-cursor:pointer;
+font-size:18px;
 }
-</style>
 
+footer{
+background:#000;
+padding:20px;
+text-align:center;
+}
+
+</style>
 </head>
+
 
 <body>
 
 <header>
+<div>
 <h1>SL7 FC</h1>
-<p>الموقع الرسمي للنادي</p>
+<p>الموقع الرسمي لنادي SL7</p>
+<button>تابع الفريق</button>
+</div>
 </header>
+
+
+<nav>
+<a href="#news">الأخبار</a>
+<a href="#team">الفريق</a>
+<a href="#matches">المباريات</a>
+<a href="#vote">التصويت</a>
+</nav>
+
+
+<section id="news">
+
+<h2 class="title">آخر الأخبار</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>انتصار جديد</h3>
+<p>SL7 FC يواصل المنافسة بقوة.</p>
+</div>
+
+<div class="card">
+<h3>تدريبات الفريق</h3>
+<p>استعدادات قوية للمباراة القادمة.</p>
+</div>
+
+<div class="card">
+<h3>أخبار النادي</h3>
+<p>تابع آخر المستجدات.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="team">
+
+<h2 class="title">الفريق الأول</h2>
+
+<div class="cards">
+
+<div class="player">
+<h3>وسام</h3>
+<p>صانع ألعاب</p>
+</div>
+
+<div class="player">
+<h3>بسام</h3>
+<p>مهاجم</p>
+</div>
+
+<div class="player">
+<h3>الشهري</h3>
+<p>لاعب وسط</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="matches">
+
+<h2 class="title">المباريات</h2>
+
+<div class="card">
+<h3>SL7 FC VS المنافس</h3>
+<p>المباراة القادمة</p>
+</div>
+
+</section>
+
 
 <section>
 
+<h2 class="title">إنجازات النادي</h2>
+
+<div class="cards">
+
 <div class="card">
-<h2>عن النادي</h2>
-<p>مرحبًا بكم في الموقع الرسمي لنادي SL7 FC.</p>
+<h3>🏆 البطولات</h3>
+<p>قائمة البطولات</p>
 </div>
 
 <div class="card">
-<h2>آخر الأخبار</h2>
-<p>سيتم إضافة الأخبار قريبًا.</p>
+<h3>⚽ الإحصائيات</h3>
+<p>الأهداف والانتصارات</p>
 </div>
 
-<div class="card">
-<h2>الفريق</h2>
-<p>قائمة اللاعبين ستضاف قريبًا.</p>
 </div>
-
-<button>تابعنا</button>
 
 </section>
+
+
+<section id="vote">
+
+<h2 class="title">تصويت الجماهير</h2>
+
+<p>من هو أفضل لاعب؟</p>
+
+<button>التصويت</button>
+
+</section>
+
+
+<footer>
+
+<p>© SL7 FC جميع الحقوق محفوظة</p>
+
+</footer>
+
 
 </body>
 </html>
